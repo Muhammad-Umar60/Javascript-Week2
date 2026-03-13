@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Semantic Landing Page</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <header id="hero" class="hero">
+            <h1>Build Better Websites</h1>
+            <p>Learn modern frontend development.</p>
+            <button>Get Started</button>
+        </header>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search features...">
+        </div>
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Our Features</h2>
+
+            <article class="feature-item">
+                <h3>Fast</h3>
+                <p>Our product is optimized for speed.</p>
+            </article>
+
+            <article class="feature-item">
+                <h3>Responsive</h3>
+                <p>Works perfectly on mobile, tablet, and desktop devices.</p>
+            </article>
+
+            <article class="feature-item">
+                <h3>Secure</h3>
+                <p>Your data and privacy are always protected.</p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+
+            <form action="/submit" method="post">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Email</label><br>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit" class="sub-btn">Send Message</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Company. All rights reserved.</p>
+        <a href="https://www.google.com/" target="_main">google</a>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
