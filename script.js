@@ -3,12 +3,11 @@
 const searchInput = document.getElementById("searchInput");
 const features = document.querySelectorAll(".feature-item");
 
-searchInput.addEventListener("keyup", function () {
+searchInput.addEventListener("keyup", () => {
     const searchValue = searchInput.value.toLowerCase();
     
-    features.forEach(function(feature) {
+    features.forEach((feature)=> {
         const heading = feature.querySelector("h3").textContent.toLowerCase();
-        console.log("headinng ",heading)
         if (heading.includes(searchValue)) {
             feature.style.display = "block";
         } else {
@@ -21,7 +20,7 @@ searchInput.addEventListener("keyup", function () {
 // FORM VALIDATION
 const form = document.querySelector("form");
 
-form.addEventListener("submit", function(e) {
+form.addEventListener("submit", (e) => {
     
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
