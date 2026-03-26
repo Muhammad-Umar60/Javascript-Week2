@@ -49,5 +49,5 @@ async function handleSearch(query) {
 
 input.addEventListener(
   "input",
-  debounce((e) => handleSearch(e.target.value), 500)
+  debounce((e) => handleSearch(e.target.value), 3000)
 );
